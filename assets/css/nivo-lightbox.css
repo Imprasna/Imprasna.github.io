@@ -81,7 +81,6 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	/* https://bugzilla.mozilla.org/show_bug.cgi?id=308801 */
 }
 .nivo-lightbox-error {
 	display: table;
@@ -96,8 +95,6 @@
 	vertical-align: middle;
 }
 
-/* Effects
- **********************************************/
 .nivo-lightbox-notouch .nivo-lightbox-effect-fade,
 .nivo-lightbox-notouch .nivo-lightbox-effect-fadeScale,
 .nivo-lightbox-notouch .nivo-lightbox-effect-slideLeft,
@@ -112,7 +109,6 @@
 	        transition: all 0.2s ease-in-out;
 }
 
-/* fadeScale */
 .nivo-lightbox-effect-fadeScale .nivo-lightbox-wrap {
 	-webkit-transition: all 0.3s;
 	   -moz-transition: all 0.3s;
@@ -131,7 +127,6 @@
 	        transform: scale(1);
 }
 
-/* slideLeft / slideRight / slideUp / slideDown */
 .nivo-lightbox-effect-slideLeft .nivo-lightbox-wrap,
 .nivo-lightbox-effect-slideRight .nivo-lightbox-wrap,
 .nivo-lightbox-effect-slideUp .nivo-lightbox-wrap,
@@ -181,7 +176,6 @@
 	        transform: translateY(0);
 }
 
-/* fall */
 .nivo-lightbox-body-effect-fall .nivo-lightbox-effect-fall {
 	-webkit-perspective: 1000px;
 	   -moz-perspective: 1000px;

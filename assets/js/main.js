@@ -4,23 +4,15 @@
 
   $(window).on('load', function() {
 
-    /* 
-   MixitUp
-   ========================================================================== */
   $('#portfolio').mixItUp();
 
-  /* 
-   One Page Navigation & wow js
-   ========================================================================== */
     var OnePNav = $('.onepage-nev');
     var top_offset = OnePNav.height() - -0;
     OnePNav.onePageNav({
       currentClass: 'active',
       scrollOffset: top_offset,
     });
-  
-  /*Page Loader active
-    ========================================================*/
+
     $('#preloader').fadeOut();
 
   // Sticky Nav
@@ -32,7 +24,6 @@
         }
     });
 
-    /* slicknav mobile menu active  */
     $('.mobile-menu').slicknav({
         prependTo: '.navbar-header',
         parentTag: 'liner',
@@ -43,8 +34,6 @@
         openedSymbol: '<i class="icon-arrow-down"></i>',
       });
 
-      /* WOW Scroll Spy
-    ========================================================*/
      var wow = new WOW({
       //disabled for mobile
         mobile: false
@@ -52,23 +41,16 @@
 
     wow.init();
 
-    /* Nivo Lightbox 
-    ========================================================*/
     $('.lightbox').nivoLightbox({
         effect: 'fadeScale',
         keyboardNav: true,
       });
 
-    /* Counter
-    ========================================================*/
     $('.counterUp').counterUp({
      delay: 10,
      time: 1000
     });
 
-
-    /* Back Top Link active
-    ========================================================*/
       var offset = 200;
       var duration = 500;
       $(window).scroll(function() {
